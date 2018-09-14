@@ -7,6 +7,9 @@
   ```$ git branch -d <branch_name>```
   * #### Clean up deleted remote branches
     ```$ git remote prune origin```
+  * #### Clean up merged branches
+    * Check out 'master'
+    * ```git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d```
 
 * ### Start ignoring changes to a single already versioned file
   ```$git update-index --assume-unchanged "main/dontcheckmein.txt"```
