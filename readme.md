@@ -9,10 +9,10 @@
     ```$ git remote prune origin```
   * #### Clean up merged branches
     * Check out 'master'
-    * ```git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d```
+    * ```$ git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d```
 
 * ### Start ignoring changes to a single already versioned file
-  ```$git update-index --assume-unchanged "main/dontcheckmein.txt"```
+  ```$ git update-index --assume-unchanged "main/dontcheckmein.txt"```
 
   and to undo that:
 
@@ -35,3 +35,7 @@
 
 * ### Pull master without checking out to it
   ```$ git fetch origin master:master```
+
+* ### [Storing credentials](https://stackoverflow.com/a/35942890)
+  ```$ git config credential.helper store```
+  ```$ git pull```
