@@ -39,3 +39,11 @@
 * ### [Storing credentials](https://stackoverflow.com/a/35942890)
   ```$ git config credential.helper store```
   ```$ git pull```
+  
+  ## User management
+  * See current user:
+  `$ git config user.name`
+  `$ git config user.email`
+  * Update current user globally
+  `$ git config --global user.name "Aliaksei Yankou"`
+  `$ git config --global user.email "yankouav@gmail.com"`
