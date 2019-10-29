@@ -47,3 +47,9 @@
   * Update current user globally
   `$ git config --global user.name "Aliaksei Yankou"`
   `$ git config --global user.email "yankouav@gmail.com"`
+  
+  ## [Cherry pick a range of commits](https://stackoverflow.com/a/3933416/5983311)
+  * Will pick all commits between A (older, including A) and B (later, including B)
+  
+  ```$ git cherry-pick A^..B```
+  
