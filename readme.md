@@ -53,3 +53,12 @@
   
   ```$ git cherry-pick A^..B```
   
+  ## [Untrack ignored files](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/)
+  1. Commit all your changes
+  2. Remove everything from the repository
+  ```$ git rm -r --cached .```
+  3. Re add everything
+  ```$ git add .```
+  4. Commit
+  ```$ git commit -m ".gitignore fix"```
+  
