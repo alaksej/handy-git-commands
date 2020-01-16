@@ -64,6 +64,7 @@
   
   ## Pre-commit message
   To format messages like [branchName] commit message
+  Update `.git/hooks/prepare-commit-msg` with the following
 ```bash
 #!/bin/bash
 
