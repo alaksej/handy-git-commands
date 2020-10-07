@@ -83,4 +83,7 @@ if [ -n "$BRANCH_NAME" ] && ! [[ $BRANCH_EXCLUDED -eq 1 ]] && ! [[ $BRANCH_IN_CO
   sed -i.bak -e "1s%^%[$BRANCH_NAME] %" $1
 fi
 ```
+
+## [Branch diff](https://stackoverflow.com/questions/2528111/how-can-i-calculate-the-number-of-lines-changed-between-two-commits-in-git/2528129)
+```$ git diff --shortstat <branch_name>```
   
