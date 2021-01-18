@@ -86,4 +86,11 @@ fi
 
 ## [Branch diff](https://stackoverflow.com/questions/2528111/how-can-i-calculate-the-number-of-lines-changed-between-two-commits-in-git/2528129)
 ```$ git diff --shortstat <branch_name>```
+
+## [show branch graph](https://stackoverflow.com/a/2421063/5983311)
+```sh
+git config --global alias.lgb "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches"
+
+git lgb
+```
   
